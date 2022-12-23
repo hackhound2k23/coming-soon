@@ -1,370 +1,744 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
+
 <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>HackHound</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <title>HackHound</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
 
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    <!-- favicons
-    ================================================== -->
-    <link rel="icon" type="image/x-icon" href="1.png">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <link rel="manifest" href="site.webmanifest">
-    
-    <style>
-    body {
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+<style>
+    ::-webkit-scrollbar {
+    width: 10px;
 }
-    </style>
 
+::-webkit-scrollbar-track {
+    background: #18191B;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #DFBC61;
+    opacity: .8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #DFBC61;
+}
+
+
+/*FOOOOOOONTS*/
+    
+    @font-face {
+    font-family: 'Norwester Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Norwester Regular'), url('norwester.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'arm';
+    src: url('fonts/arm-webfont.woff2') format('woff2'),
+        url('fonts/arm-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'mont';
+    src: url('fonts/mont-webfont.woff2') format('woff2'),
+        url('fonts/mont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'nexa';
+    src: url('fonts/nexa-webfont.woff2') format('woff2'),
+        url('fonts/nexa-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'NB';
+    src: url('fonts/north-webfont.woff2') format('woff2'),
+        url('fonts/north-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'pop';
+    src: url('fonts/pop-webfont.woff2') format('woff2'),
+        url('fonts/pop-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinsblack';
+    src: url('fonts/pop_h-webfont.woff2') format('woff2'),
+        url('fonts/pop_h-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Olga';
+    src: url('fonts/olga-webfont.woff2') format('woff2'),
+        url('fonts/olga-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'plex';
+    src: url('fonts/plex-webfont.woff2') format('woff2'),
+        url('fonts/plex-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'rale';
+    src: url('fonts/rale-webfont.woff2') format('woff2'),
+        url('fonts/rale-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('fonts/raleway-regular-webfont.woff2') format('woff2'),
+        url('fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'three';
+    src: url('fonts/three-webfont.woff2') format('woff2'),
+        url('fonts/three-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*
+@font-face {
+    font-family: Olga;
+    src: url(fonts/Olga.ttf);
+}
+
+@font-face {
+    font-family: NB;
+    src: url(fonts/north.otf);
+}
+
+@font-face {
+    font-family: arm;
+    src: url(fonts/arm.otf);
+}
+
+@font-face {
+    font-family: three;
+    src: url(fonts/three.ttf);
+}
+
+@font-face {
+    font-family: pop;
+    src: url(fonts/pop.otf);
+}
+
+@font-face {
+    font-family: plex;
+    src: url(fonts/plex.ttf);
+}
+
+@font-face {
+    font-family: futura;
+    src: url(fonts/futura.ttf);
+}
+
+@font-face {
+    font-family: mont;
+    src: url(fonts/mont.otf);
+}
+
+@font-face {
+    font-family: rale;
+    src: url(fonts/rale.ttf);
+}
+
+@font-face {
+    font-family: nexa;
+    src: url(fonts/nexa.otf);
+}
+*/
+@font-face {
+    font-family: 'Trajan';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Trajan'), url('fonts/TrajanPro-Regular.woff') format('woff');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.head__custom-nav .navbar-brand span {
+    font-weight: 700;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.head__custom-nav button {
+    padding: 0;
+}
+
+.head__custom-nav button span img {
+    width: 45px;
+}
+
+.head__custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
+    color: white;
+    font-weight: 400;
+    padding: 8px 15px;
+    white-space: nowrap;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.head__custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
+    color: #DFBC61;
+}
+
+.custom-section {
+    width: inherit;
+    padding: 40px 0;
+}
+
+@media screen and (max-width: 991.98px) {
+    .custom-section {
+        flex-direction: column-reverse;
+    }
+}
+
+.custom-section .col-lg-4 {
+    margin-top: 100px;
+}
+
+.custom-section .col-lg-4 h2 {
+    font-weight: 700;
+    font-size: 63px;
+    color: white;
+    margin-bottom: 0;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.custom-section .col-lg-4 h3 {
+    font-weight: 300;
+    font-size: 64px;
+    color: white;
+    line-height: 1;
+}
+
+.custom-section .col-lg-4 p {
+    color: white;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.custom-section .col-lg-4 a {
+    display: inline-block;
+    padding: 8px 25px;
+    color: white;
+    background-color: #DFBC61;
+    background-image: linear-gradient(315deg, #DFBC61 0%, #ec9f05 74%);
+    border-radius: 50px;
+    margin-top: 60px;
+    text-decoration: none;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.custom-section .col-lg-4 a.second_btn {
+    display: inline-block;
+    padding: 8px 25px;
+    color: #F53803;
+    background: none;
+    border: 2px solid #DFBC61;
+    border-radius: 50px;
+    margin-top: 60px;
+    text-decoration: none;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.custom-section .col-lg-8 img {
+    width: 100%;
+    top: -14rem;
+    right: -11%;
+}
+
+@media screen and (max-width: 991.98px) {
+    .custom-section .col-lg-8 img {
+        width: 100%;
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+}
+
+.custom-section .col-lg-8 .animate-img img {
+    width: 118px;
+    top: -13.5rem;
+    right: 2.9rem;
+}
+
+    .team-services{
+        filter: grayscale(80%);
+        aspect-ratio: 1/1;
+    }
+     .team-services:hover{
+        filter: grayscale(0%);
+    }
+    
+
+
+
+
+    
+    </style>
 </head>
 
-<body id="top" class="ss-preload theme-particles">
+<body>
 
+  <!-- ======= Header ======= -->
+  <div class="container">
+        <header class="head my-3">
+            <nav class="navbar navbar-expand-lg navbar-light head__custom-nav">
+                <br>
+                <img class="img-fluid" src="assets/img/srm-logo.png" width="15%" style="min-width: 13%;" />
+                              <img class="img-fluid" src="assets/img/logo.png" width="10%" style="min-width: 8%; margin-left: 5%;" />
+ 
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <div class="row header_hw custom-section d-flex align-items-center" style="padding-top: 0;">
+            <div class="col-12 col-lg-4">
+                <h2 style="font-family: 'Norwester Regular'; color: #DFBC61; font-size: 93px;">
+                    HackHound
+                </h2>
+                <h3 style="margin-top: 5px;">
+                    <span style="font-family: 'Lexend Deca'; color: #fff; font-size: .5em;">3<sup>rd</sup> - 4<sup>th</sup> March</span>
+                </h3>
 
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
+              
+                <a href="">Registrations Opening Soon!</a></div>
+            <div class="col-12 col-lg-8">
+                <img src="assets/img/Brainstorming_1.gif" alt="Team process banner" />
+            </div>
         </div>
     </div>
+    
+    
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container">
 
+        <div class="row" data-aos="zoom-in">
 
-    <!-- intro
-    ================================================== -->
-    <section id="intro" class="s-intro">
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/download.png" class="img-fluid" alt="">
+          </div>
 
-        <div id="particles-js" class="s-intro__particles"></div>
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/download.png" class="img-fluid" alt="">
+          </div>
 
-        <header class="s-intro__header"> 
-            <div class="s-intro__logo">
-                <a class="logo" href="#">
-                                        <img src="images/2.png" alt="Homepage" style="width:80%;">
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/download.png" class="img-fluid" alt="">
+          </div>
 
-                </a>
-            </div>
-            
-        </header>  <!-- s-intro__header -->
-        
-        <div class="row s-intro__content">
-            <div class="column">
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/download.png" class="img-fluid" alt="">
+          </div>
 
-                <div class="text-pretitle">
-                    Nice to meet you.
-                </div>
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/download.png" class="img-fluid" alt="">
+          </div>
 
-                <h1 class="text-huge-title">
-                We are preparing <br>
-                something exciting <br>
-                & amazing for you.
-                </h1>
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/download.png" class="img-fluid" alt="">
+          </div>
 
-                <div class="s-intro__content-bottom">
-
-                    <div class="s-intro__content-bottom-block">
-                        <h5>Launching Soon</h5>
-
-                    </div> <!-- end s-intro-content__bottom-block -->
-
-                   
-                </div> <!-- end s-intro-content__bottom -->
-
-            </div>
-        </div> <!-- s-intro__content -->
-
-       
-
-       
-    </section> <!-- end s-intro -->
-
-
-    <!-- hidden element
-    ================================================== -->
-    <div id="hidden" aria-hidden="true" style="opacity: 0;"></div>
-
-
-    <!-- details
-    ================================================== -->
-    <section id="details" class="s-details">
-
-        <div class="row">
-            <div class="column">
-
-                <h1 class="text-huge-title text-center">
-                    Hi, We Are Knox.
-                </h1>
-
-                <nav class="tab-nav">
-                    <ul class="tab-nav__list"> 
-                        <li class="active" data-id="tab-about">
-                            <a href="#0">
-                                <span>About</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#tab-services">
-                                <span>Services</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#tab-contact">
-                                <span>Contact</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav> <!-- end tab-nav -->
-
-                <div class="tab-content">
-
-                    <!-- 01 - tab about -->
-                    <div id="tab-about" class='tab-content__item'>
-
-                        <div class="row tab-content__item-header">
-                            <div class="column">
-                                <h2>Our Story.</h2>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="column">
-                                <p class="lead">
-                                Quidem molestiae natus ipsa ut nihil molestiae numquam tenetur. Ipsum quia 
-                                sit vitae ipsam et temporibus est. Consequatur recusandae aut aut. Aut esse 
-                                sed sint. Sit ipsa velit possimus est. Atque doloribus dicta sit beatae 
-                                necessitatibus. Aut voluptate asperiores nostrum eveniet magnam et consequatur 
-                                ab accusamus magni.
-                                </p>
-
-                                <p>
-                                Tempora debitis perspiciatis eum. Repudiandae et aperiam quos exercitationem 
-                                enim voluptatem quam sequi temporibus. Ratione quis nihil voluptatem placeat 
-                                nemo. Quibusdam delectus magni quas et architecto et repellat a nam.
-                                Quasi et voluptates libero sed vel quos in nisi. Error et quis. Impedit autem 
-                                porro facilis. Aut voluptate asperiores nostrum eveniet magnam et consequatur 
-                                ab accusamus.
-                                </p>
-
-                                <div class="row">
-                                    <div class="column lg-6 tab-12">
-                                        <h4>More About Us.</h4>
-                                        <p>
-                                        Sed consequatur quia delectus praesentium. Ut unde velit maiores aut sint 
-                                        quia molestiae accusamus. Nihil et quidem qui natus ut et. Autem error 
-                                        architecto. Pariatur ex repellendus. Occaecati voluptatibus dolorem magni 
-                                        molestiae dolore voluptas occaecati asperiores nemo. Est fugiat fuga nesciunt 
-                                        ducimus quaerat et placeat natus.
-                                        </p>
-                                    </div>
-                                    <div class="column lg-6 tab-12">
-                                        <h4>Need Web Hosting?</h4>
-                                        <p>
-                                        Need a great reliable web hosting?
-                                        We highly recommend <a href="https://www.dreamhost.com/r.cgi?287326">DreamHost</a>.
-                                        Powerful web and Wordpress hosting. Guaranteed. Starting at $2.95 per month.
-                                        </p>
-                                        <a href="https://www.dreamhost.com/r.cgi?287326" class="btn btn--stroke u-fullwidth">Get Started Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div> <!-- end 01 - tab about -->
-
-                    <!-- 02 - tab services -->
-                    <div id="tab-services" class='tab-content__item'>
-
-                        <div class="row tab-content__item-header">
-                            <div class="column">
-                                <h2>What We Do.</h2>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="column">
-                                <p class="lead">
-                                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
-                                asperiores est commodi amet quia architecto. Dolores necessitatibus et. Voluptatibus 
-                                optio natus asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="row services-list block-lg-one-half block-md-one-half block-tab-whole">
-
-                            <div class="column services-list__item">
-                                <div class="services-list__item-content">
-                                    <h4 class="item-title">Brand Identity</h4>
-                                    <p>
-                                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
-                                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                                    </p>
-                                </div>
-                            </div>
-                
-                            <div class="column services-list__item">
-                                <div class="services-list__item-content">
-                                    <h4 class="item-title">Illustration</h4>
-                                    <p>
-                                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
-                                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                                    </p>
-                                </div>
-                            </div>
-                
-                            <div class="column services-list__item">
-                                <div class="services-list__item-content">
-                                    <h4 class="item-title">Web Design</h4>
-                                    <p>
-                                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
-                                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                                    </p>
-                                </div>
-                            </div>
-                
-                            <div class="column services-list__item">
-                                <div class="services-list__item-content">
-                                    <h4 class="item-title">Product Strategy</h4>
-                                    <p>
-                                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
-                                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                                    </p>
-                                </div>
-                            </div>
-                
-                            <div class="column services-list__item">
-                                <div class="services-list__item-content">
-                                    <h4 class="item-title">UI/UX Design</h4>
-                                    <p>
-                                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
-                                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                                    </p>
-                                </div>
-                            </div>
-                
-                            <div class="column services-list__item">
-                                <div class="services-list__item-content">
-                                    <h4 class="item-title">E-Commerce</h4>
-                                    <p>
-                                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
-                                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.
-                                    </p>
-                                </div>
-                            </div>
-                
-                        </div> <!-- end services-list -->
-                        
-                    </div> <!-- end 02 - tab services -->
-
-                    <!-- 03 - tab contact -->
-                    <div id="tab-contact" class="tab-content__item">
-
-                        <div class="row tab-content__item-header">
-                            <div class="column">
-                                <h2>Get in Touch.</h2>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="column">
-                                
-                                <p class="lead">
-                                Voluptates laborum eum quas. Pariatur impedit sit veniam est 
-                                et quasi voluptas voluptatem. Cumque hic enim perferendis 
-                                amet odit in molestias debitis. Facere nulla qui pariatur 
-                                quasi mollitia et. Et dolorem dolorum quo in sit architecto.
-                                </p>
-
-                                <div class="row">
-                                    <div class="column lg-6 tab-12">
-                                        <h4>Where to Find Us</h4>
-                
-                                        <p>
-                                        1600 Amphitheatre Parkway<br>
-                                        Mountain View, CA<br>
-                                        94043 US
-                                        </p>
-                
-                                    </div>
-                
-                                    <div class="column lg-6 tab-12">
-                                        <h4>Follow Us</h4>
-                
-                                        <ul class="link-list">
-                                            <li><a href="#0">Facebook</a></li>
-                                            <li><a href="#0">Twitter</a></li>
-                                            <li><a href="#0">Instagram</a></li>
-                                        </ul>
-                
-                                    </div>
-                                </div>
-
-                                <p class="tab-content__item-bottom">
-                                    <a href="mailto:#0" class="contact-email">hello@knox.com</a>
-                                    <span class="contact-number"> 
-                                        <a href="tel:197-543-2345">+197 543 2345</a> 
-                                        <span>/</span>
-                                        <a href="tel:123-456-9000">+123 456 9000</a>
-                                    </span>
-                                </p>
-
-                            </div>
-                        </div>
-                        
-                    </div> <!-- end 03 - tab contact -->
-
-                </div> <!-- end tab content -->
-
-                <!-- footer  -->
-                <footer>
-                    <div class="ss-copyright">
-                        <span>© Copyright Knox 2021</span> 
-                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-                    </div>
-                </footer>
-
-            </div>
         </div>
 
-        <div class="ss-go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top">
-                <span>Back to Top</span>
-                <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26"><path d="M7.5 1.5l.354-.354L7.5.793l-.354.353.354.354zm-.354.354l4 4 .708-.708-4-4-.708.708zm0-.708l-4 4 .708.708 4-4-.708-.708zM7 1.5V14h1V1.5H7z" fill="currentColor"></path></svg>
-             </a>
-        </div> <!-- end ss-go-top -->
+      </div>
+    </section> 
+     <!-- =======End Cliens Section -->
 
-    </section> <!-- end s-details -->
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 style="color: #f5f5f5">About Us</h2>
+        </div>
+
+        <div class="row content">
+               <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+HackHound is a 24-hour hackathon that seeks to provide an opportunity for ardent members of the hacker community to showcase the best of their talents and encourage tech culture to the new and old.
+              <br><br>  This event seeks to introduce new young minds to the field of computer science development and to spread coding culture. It is a citywide hackathon in which students through the whole of Delhi NCR are invited to participate while also learning and demonstrating primary technical skills, managerial skills as well as communication skills.
 
 
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/particle-settings.js"></script>
+            </p>
+            <a href="#" class="btn-learn-more">Register Now!</a>
+          </div>
+          <div class="col-lg-6">
+            <p>
+              Guidelines
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Offline In-Person Event @ SRMIST, Modinagar</li>
+                <li><i class="ri-check-double-line"></i> Participants should be registered under an institution and are required to provide proof.</li>
+              <li><i class="ri-check-double-line"></i> Registration is free of Cost</li>
+              <li><i class="ri-check-double-line"></i> 24-Hour Hackathon - Noon to Noon Period</li>
+            <li><i class="ri-check-double-line"></i> Teams should consist of minimum 5 and maximum 6 members not necessarily of same institute.</li>
+            </ul>
+          </div>
+       
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+    
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3>Why should you <strong>participate</strong>?</h3>
+              <p>
+                Still haveing doubts!? No issues, we'll convince you!
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Best Experience <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      The entire process from the registrations to your setup for the hackathon at our campus, we will take care!
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Fun Activities<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                     Get involved in a lot of fun events and activities that will get you going throughout the entire hackathon
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Win Exciting Prizes! <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Compete for exciting cash prizes!
+                    </p>
+                  </div>
+                </li>
+                   <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>04</span> Mentorship <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                     Learn while building by some amazing mentors!
+                    </p>
+                  </div>
+                </li>
+                   <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-5" class="collapsed"><span>05</span> Networking<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-5" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                    Participate in active networking across 100s of other participants, connect with scholarly professors and the hardworking members of Tech-Club.
+                    </p>
+                  </div>
+                </li>
+                   <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-6" class="collapsed"><span>06</span> Certificates and Swags<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-6" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                     Earn amazing swags for participation and achievements that will definitely be a feature in your Resume!
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why.gif");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+   
+    <!-- ======= Services Section =======-->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 style="color: white">Team</h2>
+          <p>Teamwork makes the Dreamwork!</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-2 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+ 
+              <h4><a href="">Devanshu Sinha</a></h4>
+              <img style="border-radius: 5px;" class="img-fluid animated team-services" src="https://i.imgur.com/nIbIMsl.jpg">
+            </div>
+          </div>
+               <div class="col-xl-2 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+ 
+              <h4><a href="">Tanay Morakhia</a></h4>
+              <img style="border-radius: 5px;" class="img-fluid animated team-services" src="assets/img/team/tm.jpg">
+
+            </div>
+          </div>
+
+               <div class="col-xl-2 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+ 
+              <h4><a href="">Mohd. Shaheer</a></h4>
+                              <img style="border-radius: 5px;" class="img-fluid animated team-services" src="assets/img/team/s.jpeg">
+
+            </div>
+          </div>
+
+
+          <div class="col-xl-2 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"></div>
+              <h4><a href="">Arpit<span class="nope" style="visibility: hidden">tkh</span> Tripathi</a></h4>
+                              <img style="border-radius: 5px;" class="img-fluid animated team-services" src="assets/img/team/at.jpg">
+
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"></div>
+              <h4><a href="">Suyash Kushwaha</a></h4>
+                              <img style="border-radius: 5px;" class="img-fluid animated team-services" src="assets/img/team/sk.jpg">
+
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"></div>
+              <h4><a href="">Aabhya <span class="nope" style="visibility: hidden">tkh</span> Jain</a></h4>
+                              <img style="border-radius: 5px;" class="img-fluid animated team-services" src="assets/img/team/aj.jpeg">
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Interested in Sponsoring?</h3>
+            <p> We are actively looking for sponsors to make this event a huge success. Contact us now for more information.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="mailto:admin@hackhound.ml">Sponsor Now!</a>
+          </div>    
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+   
+   
+
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section style="background-color: " id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 style="color: white;">Frequently Asked Questions</h2>
+          <p>We have answered some basic questions! Please send further questions to admin@hackhound.ml!</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">How much does it cost to participate? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Nothing, participation in HackHaound is absolutely FREE!
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">What is the venue for the event? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  The offline hackathon will be held in SRM Institute of Science and Technology, Modinagar, Ghaziabad. Other details will be shared with you via email.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Who can participate? Do any prerequisites or skills required to exist? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+  Participation in this event is open to everyone. The only prerequisites are excitement and motivation. It’s a beginner-friendly hackathon. We are encouraging beginners to begin their coding journey with us. But having coding and programming experience is a significant benefit.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">What are the rules on the Team Size?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                 A team can have at most 6 members so you can participate as a team but that’s your choice. The minimum number of participants a team should have is 4.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Will there be food? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yes, you will be provided with meals. We don’t want to keep our hackers on empty stomachs. And we know the importance of caffeine to keep on with the code hiking so a lot of coffee will also be available for our hackers.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>HackHound</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
 
